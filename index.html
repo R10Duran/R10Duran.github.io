@@ -8,7 +8,7 @@
     <title>Portifólio - Robert Duran</title>
 </head>
 <body>
-    <header>
+    <header class="fixed">
         <h1><a href="#">Robert Duran</a></h1>
         <nav>
             <ul>
@@ -53,25 +53,25 @@
 
                     <div class="git">
                         <a href="https://github.com/R10Duran">
-                            <img src="data:image/png;base64,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" alt="">
+                            <img src="img/icons/github.png" alt="">
                         </a>
                     </div>
 
                     <div class="linkdn">
                         <a href="https://br.linkedin.com/in/robert-duran-007b96167">
-                            <img src="https://cdn-icons-png.flaticon.com/512/49/49408.png" alt="">
+                            <img src="img/icons/linkedin.svg" alt="">
                         </a>
                     </div>
 
                     <div class="email">
                         <a href="mailto:robertwillian689@gmail.com" >
-                            <img src="https://cdn.icon-icons.com/icons2/2131/PNG/512/email_mesasge_envelope_icon_131541.png" alt="">
+                            <img src="img/icons/email.svg" alt="">
                         </a>
                     </div>
 
                     <div class="insta">
                         <a href="#" >
-                            <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="">
+                            <img src="img/icons/instagram.svg" alt="">
                         </a>
                     </div>
                 </div>
