@@ -1,2 +1,3 @@
 # R10Duran.github.io
-Criação em desenvolvimento do meu portifólio pessoal e para futuros contatos. 
+Criação em desenvolvimento do meu portifólio pessoal.
+https://r10duran.github.io/
