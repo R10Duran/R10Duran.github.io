@@ -270,15 +270,15 @@ main{
 
 
 .lista-front{
-
+    border: 1px solid blue;
 }
 
 .lista-banco{
-
+    border: 1px solid blue;
 }
 
 .lista-back{
-
+    border: 1px solid blue;
 }
 
 /*front-skills-fim*/
