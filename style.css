@@ -4,161 +4,281 @@
     box-sizing: border-box;
 }
 
+/*estrutura página- inicio*/
 body{
+    background: rgb(32, 32, 32);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100vh;
-    background-color: #333333;
-    color: #fff;
 }
 
 a{
     text-decoration: none;
-    color: #fff;
 }
+/*estrutura página - fim*/
 
-/*Header*/
+/*header - inicio*/
 header{
-    width: 100%;
-    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    padding: 10px 0px 10px 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
     border-bottom: 1px solid rgb(28, 108, 255);
-    background-color: rgb(117, 117, 117);
+    color: white;
+    position: fixed;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
 }
 
 header h1{
     margin-left: 40px;
 }
 
-nav{
+header ul{
     display: flex;
-}
-
-ul {
+    margin-right: 10px;
     list-style: none;
-    display: flex;
-    margin-right: 20px;
 }
 
-ul li{
+header ul li{
+    margin-right: 30px;
     display: block;
-    padding: 10px;
 }
 
-ul li a{
-    cursor: pointer;
-    padding: 5px;
-    color: #fff;
-    font-weight: bold;
-}
-
-nav a:hover{
+header ul li a:hover{
     border-bottom: 3px solid rgb(28, 108, 255);
     border-radius: 100%;
-    transition-duration: 0.1s;
+    border-top: none;
 }
+/*header - fim*/
 
-/*Header*/
 
-
-/*Main*/
-
+/*main-estrutura-inicio*/
 main{
     width: 80%;
-    height: 100vh;
-    margin: 0  auto;
-    display: flex;
+    margin: 0 auto;
 }
+/*main-estrutura-fim*/
 
-section{
+/*front-inicio*/
+#front{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-/*conteudo inicio*/
+
+.avatar img{
+    width: 370px;
+    margin: 120px 120px 0px 0px;
+}
+
+/*conteudo-front-inicio*/
+.conteudo{
+    font-weight: bold;
+    color: white;
+}
+
 .conteudo h1{
     font-size: 45px;
+    font-weight: bold;
 }
 
 .conteudo h3{
     font-size: 24px;
+    font-weight: bold;
 }
 
 .conteudo p{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
-/*conteúdo fim*/
+/*conteudo-front-fim*/
 
-.perfil img{
-    width: 370px;
-    height: auto;
-    margin-top: 50px;
-    margin-right: 80px;
-}
-
-
-.git img{
-    width: 30px;
-    height: 30px;
-    margin-left: 100px;
-}
-
-.linkdn img, .email img, .insta img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-}
-/*curriculo inicio */
+/*curriculo-front-inicio*/
 .curriculo{
     display: flex;
-    align-items: center;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .curriculo button{
-    padding: 10px;
+    padding: 0px 5px 0px 5px;
     border-radius: 10px;
-    background-color: rgb(28, 108, 255);
-    border:none;
+    border: none;
     cursor: pointer;
+    background: rgb(28, 108, 255);
 }
 
-
 .curriculo button a{
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
 .curriculo button:hover{
-    transition: all .5s;
+    transition: all .4s;
     transform: scale(1.1);
-    cursor: pointer;
 }
 
 .curriculo img:hover{
-    transform: scale(1.2);
     transition: all .4s;
+    transform: scale(1.1);
 }
-/*curriculo fim*/
+/*curriculo-front-fim*/
+/*front-fim*/
 
+/*front-sobre*/
+#front-sobre{
+    margin-top: 100px;
 
-/*Main-sobre-mim-inicio*/
+}
 
-/*Main-sobre-mim-fim*/
+#front-sobre h1{
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    border: 2px solid red;
+}
 
-
-
-/*Footer*/
-
-footer{
+.sobre-itens{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    left: 40%;
-    cursor: pointer;
+    justify-content: space-evenly;
+    color: rgb(197, 194, 194);
+    margin-top: 20px;
 }
-/*Footer*/
+
+.sobre-foto{
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.sobre-info{
+    width: 400px;
+    height: 300px;
+    border: 1px solid green ;
+}
+/*front sobre - fim*/
+
+/*front-skills-inicio*/
+#front-skills h1{
+    text-align: center;
+    margin-top: 100px;
+    border: 2px solid red;
+    color: white;
+    font-size: 34px;
+}
+
+.skills-itens{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    color: white;
+}
+
+.skills-itens ul{
+    list-style: none;
+    padding: 10px 0px 10px 0px;
+}
+
+.skills-progresso{
+    width: 250px;
+    text-align: end;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+/*skills-porcentagem-front-inicio*/
+.skills-html{
+    background-color: rgb(0, 255, 170);
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-css{
+    background-color: rgb(0, 255, 170);
+    width: 195px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-js{
+    background-color: rgb(0, 255, 170);
+    width: 95px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-bootstrap{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-vuejs{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+/*skills-porcentagem-front-fim*/
+
+/*skills-porcentagem-banco de dados-inicio*/
+.skills-sql{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-mysql{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*skills-porcentagem-banco de dados-fim*/
+
+/*skills-porcentagem-back-end-inicio*/
+.skills-nodejs{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-python{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-c{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-net{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+/*skills-porcentagem-back-end-inicio*/
+
+
+.lista-front{
+
+}
+
+.lista-banco{
+
+}
+
+.lista-back{
+
+}
+
+/*front-skills-fim*/
