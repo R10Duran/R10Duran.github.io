@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estrutura página- inicio*/
+body{
+    background: rgb(32, 32, 32);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*estrutura página - fim*/
+
+/*header - inicio*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(28, 108, 255);
+    color: white;
+    position: fixed;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+header h1{
+    margin-left: 40px;
+}
+
+header ul{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 30px;
+    display: block;
+}
+
+header ul li a:hover{
+    border-bottom: 3px solid rgb(28, 108, 255);
+    border-radius: 100%;
+    border-top: none;
+}
+/*header - fim*/
+
+
+/*main-estrutura-inicio*/
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+/*main-estrutura-fim*/
+
+/*front-inicio*/
+#front{
+    display: flex;
+    align-items: center;
+}
+
+.avatar img{
+    width: 370px;
+    margin: 120px 120px 0px 0px;
+}
+
+/*conteudo-front-inicio*/
+.conteudo{
+    font-weight: bold;
+    color: white;
+}
+
+.conteudo h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.conteudo h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.conteudo p{
+    font-weight: bold;
+    font-size: 16px;
+}
+/*conteudo-front-fim*/
+
+/*curriculo-front-inicio*/
+.curriculo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.curriculo button{
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(28, 108, 255);
+}
+
+.curriculo button a{
+    font-weight: bold;
+    color: white;
+}
+
+.curriculo button:hover{
+    transition: all .4s;
+    transform: scale(1.1);
+}
+
+.curriculo img:hover{
+    transition: all .4s;
+    transform: scale(1.1);
+}
+/*curriculo-front-fim*/
+/*front-fim*/
+
+/*front-sobre*/
+#front-sobre{
+    margin-top: 100px;
+
+}
+
+#front-sobre h1{
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    border: 2px solid red;
+}
+
+.sobre-itens{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(197, 194, 194);
+    margin-top: 20px;
+}
+
+.sobre-foto{
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.sobre-info{
+    width: 400px;
+    height: 300px;
+    border: 1px solid green ;
+}
+/*front sobre - fim*/
+
+/*front-skills-inicio*/
+#front-skills h1{
+    text-align: center;
+    margin-top: 100px;
+    border: 2px solid red;
+    color: white;
+    font-size: 34px;
+}
+
+.skills-itens{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    color: white;
+}
+
+.skills-itens ul{
+    list-style: none;
+    padding: 10px 0px 10px 0px;
+}
+
+.skills-progresso{
+    width: 250px;
+    text-align: end;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+/*skills-porcentagem-front-inicio*/
+.skills-html{
+    background-color: rgb(0, 255, 170);
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-css{
+    background-color: rgb(0, 255, 170);
+    width: 195px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-js{
+    background-color: rgb(0, 255, 170);
+    width: 95px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-bootstrap{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-vuejs{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+/*skills-porcentagem-front-fim*/
+
+/*skills-porcentagem-banco de dados-inicio*/
+.skills-sql{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-mysql{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*skills-porcentagem-banco de dados-fim*/
+
+/*skills-porcentagem-back-end-inicio*/
+.skills-nodejs{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-python{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-c{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+.skills-net{
+    background-color: aquamarine;
+    width: 215px;
+    border: none;
+    border-radius: 10px;
+}
+/*skills-porcentagem-back-end-inicio*/
+
+
+.lista-front{
+
+}
+
+.lista-banco{
+
+}
+
+.lista-back{
+
+}
+
+/*front-skills-fim*/

@@ -7,7 +7,6 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
-    overflow: hidden;
     background-color: #333333;
     color: #fff;
 }
@@ -18,15 +17,15 @@ a{
 }
 
 /*Header*/
-
 header{
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
     position: fixed;
+    border-bottom: 1px solid rgb(28, 108, 255);
+    background-color: rgb(117, 117, 117);
 }
 
 header h1{
@@ -58,7 +57,7 @@ ul li a{
 nav a:hover{
     border-bottom: 3px solid rgb(28, 108, 255);
     border-radius: 100%;
-    transition: all .5s;
+    transition-duration: 0.1s;
 }
 
 /*Header*/
@@ -71,15 +70,14 @@ main{
     height: 100vh;
     margin: 0  auto;
     display: flex;
-    align-items: center;
 }
 
 section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
+/*conteudo inicio*/
 .conteudo h1{
     font-size: 45px;
 }
@@ -90,14 +88,15 @@ section{
 
 .conteudo p{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
+/*conteúdo fim*/
 
 .perfil img{
-    width: 600px;
-    height: 600px;
+    width: 370px;
+    height: auto;
     margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 80px;
 }
 
 
@@ -112,10 +111,11 @@ section{
     height: 30px;
     margin-left: 10px;
 }
-
+/*curriculo inicio */
 .curriculo{
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .curriculo button{
@@ -123,7 +123,7 @@ section{
     border-radius: 10px;
     background-color: rgb(28, 108, 255);
     border:none;
-    margin-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -132,7 +132,24 @@ section{
     font-weight: bold;
 }
 
-/*Main*/
+.curriculo button:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.curriculo img:hover{
+    transform: scale(1.2);
+    transition: all .4s;
+}
+/*curriculo fim*/
+
+
+/*Main-sobre-mim-inicio*/
+
+/*Main-sobre-mim-fim*/
+
+
 
 /*Footer*/
 
@@ -140,9 +157,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     bottom: 0;
     left: 40%;
+    cursor: pointer;
 }
-
 /*Footer*/
