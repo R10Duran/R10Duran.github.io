@@ -266,8 +266,7 @@ main{
     border: none;
     border-radius: 10px;
 }
-/*skills-porcentagem-back-end-inicio*/
-
+/*skills-porcentagem-back-end-fim*/
 
 .lista-front{
     border: 1px solid blue;
@@ -280,5 +279,117 @@ main{
 .lista-back{
     border: 1px solid blue;
 }
-
 /*front-skills-fim*/
+
+/*front-projetos-inicio*/
+#front-projetos h1{
+    text-align: center;
+    margin-top: 100px;
+    border: 2px solid red;
+    color: white;
+    font-size: 34px;
+}
+
+.projeto-itens{
+    display: grid;
+    grid-template-areas: 
+    "project1 project2 project3"
+    "project4 project5 project6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6{
+    width: 317px;
+    height: 200px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.proj1{
+    grid-area: project1;
+}
+
+.proj2{
+    grid-area: project2;
+}
+
+.proj3{
+    grid-area: project3;
+}
+
+.proj4{
+    grid-area: project4;  
+}
+
+.proj5{
+    grid-area: project5;
+}
+
+.proj6{
+    grid-area: project6;
+}
+/*front-projetos-fim*/
+
+
+/*front-contato-inicio*/
+#front-contato h1{
+    text-align: center;
+    margin-top: 100px;
+    border: 2px solid red;
+    color: white;
+    font-size: 34px;
+}
+
+.contato-itens{
+    display: grid;
+    grid-template-areas: 
+    "contact1 contact3"
+    "contact2 contact3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cont1{
+    grid-area: contact1;
+    width: 400px;
+    height: 150px;
+    border: 1px solid white;
+}
+
+.cont2{
+    grid-area: contact2;
+    width: 400px;
+    height: 150px;
+    border: 1px solid white;
+}
+
+.cont3{
+    grid-area: contact3;
+    width: 580px;
+    height: 330px;
+    border: 1px solid white;
+}
+
+/*front-contato-fim*/
+
+/*footer-inicio*/
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid greenyellow;
+    align-items: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/*footer-fim*/
