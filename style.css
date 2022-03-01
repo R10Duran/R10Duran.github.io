@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*estrutura página- inicio*/
 body{
     background: rgb(32, 32, 32);
@@ -27,6 +31,7 @@ header{
     border-bottom: 1px solid rgb(28, 108, 255);
     color: white;
     position: fixed;
+    z-index: 1;
 }
 
 header a{
@@ -73,7 +78,7 @@ main{
 
 .avatar img{
     width: 370px;
-    margin: 120px 120px 0px 0px;
+    margin: 120px 120px -4px 0px;
 }
 
 /*conteudo-front-inicio*/
@@ -133,7 +138,6 @@ main{
 /*front-sobre*/
 #front-sobre{
     margin-top: 100px;
-
 }
 
 #front-sobre h1{
@@ -393,3 +397,28 @@ footer a{
 }
 
 /*footer-fim*/
+
+
+/*Responsividade ínicio*/
+
+@media (min-width: 0px) and (max-width: 480px){
+
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+
+ 
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+ 
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+
+ 
+}
+
+/*Responsividade fim*/
